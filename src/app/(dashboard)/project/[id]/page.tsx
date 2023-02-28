@@ -2,8 +2,9 @@ import TaskCard from "@/components/TaskCard";
 import { getUserFromCookie } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { cookies } from "next/headers";
-import { RequestCookies } from "next/dist/server/web/spec-extension/cookies";
+// import { RequestCookies } from "next/dist/server/web/spec-extension/cookies";
 import { Project } from "@prisma/client";
+import { RequestCookies } from "next/dist/compiled/@edge-runtime/cookies";
 
 type ProjectPageParams = {
   params: {

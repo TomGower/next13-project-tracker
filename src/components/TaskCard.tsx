@@ -1,7 +1,8 @@
 import { getUserFromCookie } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { Task, TASK_STATUS } from "@prisma/client";
-import { RequestCookies } from "next/dist/server/web/spec-extension/cookies";
+import { RequestCookies } from "next/dist/compiled/@edge-runtime/cookies";
+// import { RequestCookies } from "next/dist/server/web/spec-extension/cookies";
 import { cookies } from "next/headers";
 import Button from "./Button";
 import Card from "./Card";

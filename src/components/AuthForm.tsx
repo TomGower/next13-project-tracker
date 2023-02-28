@@ -49,6 +49,7 @@ export default function AuthForm({ mode }: { mode: "register" | "signin" }) {
         setFormState({ ...initial });
       }
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [
       formState.email,
       formState.password,

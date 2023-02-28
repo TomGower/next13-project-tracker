@@ -3,7 +3,7 @@ import { cookies } from "next/headers";
 import Button from "./Button";
 import Card from "./Card";
 import { delay } from "@/lib/async";
-import { RequestCookies } from "next/dist/server/web/spec-extension/cookies";
+import { RequestCookies } from "next/dist/compiled/@edge-runtime/cookies";
 
 const getData = async () => {
   await delay(5000);
