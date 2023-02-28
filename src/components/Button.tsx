@@ -45,8 +45,7 @@ const buttonClasses = cva(
   }
 );
 
-export interface ButtonProps
-  extends React.HTMLAttributes<HTMLButtonElement>,
+export interface ButtonProps extends React.ComponentPropsWithoutRef<"button">,
     VariantProps<typeof buttonClasses> {}
 
 const Button: FC<ButtonProps> = ({

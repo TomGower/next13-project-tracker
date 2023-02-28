@@ -1,14 +1,18 @@
-import GlassPane from "@/components/GlassPane";
 import "@/styles/global.css";
 import { Inter } from "@next/font/google";
-import React from "react";
+import GlassPane from "@/components/GlassPane";
+import { ReactElement } from "react";
+
+type AuthRootLayoutProps = {
+    children: ReactElement
+}
 
 const inter = Inter({
   subsets: ['latin'],
   variable: "--font-inter",
 });
 
-export default function AuthRootLayout({ children }: { children: React.ReactNode }) {
+export default function AuthRootLayout({ children }: AuthRootLayoutProps) {
   return (
     <html lang="en" className={inter.variable}>
       <head />

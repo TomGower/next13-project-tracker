@@ -1,7 +1,9 @@
-function RegisterPage() {
-  return (
-    <div>RegisterPage</div>
-  )
-}
+import AuthForm from "@/components/AuthForm";
 
-export default RegisterPage
+export default function Register() {
+  return (
+    <div>
+      <AuthForm mode="register" />;
+
+    </div>)
+}
