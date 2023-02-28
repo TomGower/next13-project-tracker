@@ -1,7 +1,7 @@
 import { User } from "@prisma/client";
 import bcrypt from "bcrypt";
 import { SignJWT, jwtVerify } from "jose";
-import { RequestCookie, RequestCookies } from "next/dist/compiled/@edge-runtime/cookies";
+import { RequestCookie, RequestCookies } from "next/dist/server/web/spec-extension/cookies";
 import { db } from "./db";
 
 export const hashPassword = (password: string) => bcrypt.hash(password, 10);
