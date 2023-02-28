@@ -45,3 +45,11 @@ export const signin = async (user: Partial<User>) => {
     json: false,
   });
 };
+
+export const createNewProject = (name: string) => {
+  return fetcher({
+    url: "/api/project",
+    method: "POST",
+    body: { name },
+  });
+};

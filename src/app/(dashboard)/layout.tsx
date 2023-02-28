@@ -19,6 +19,7 @@ export default function DashboardRootLayout({ children }: { children: React.Reac
           <Sidebar />
           <main className="w-full pl-6 h-full">{children}</main>
         </GlassPane>
+        <div id="modal"></div>
       </body>
     </html>
   );
